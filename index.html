@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Survey Form</title>
+    </head>
+
+<div id="form-outer">
+    <h1 id="title">ICO Whitelist Form </h1>
+    <p id="description">
+      Let us know how you want to participate in our ICO!</p>
+    <form method="GET" action="">
+      <div class="rowTab">
+        <div class="labels">
+          <label id="name-label" for="name">* Name: </label>
+        </div>
+        <div class="rightTab">
+          <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+        </div>
+      </div>
+      
+      <div class="rowTab">
+        <div class="labels">
+          <label id="email-label" for="email">* Email: </label>
+        </div>
+        <div class="rightTab">
+          <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your email">
+        </div>
+      </div>
+      
+      <div class="rowTab">
+        <div class="labels">
+          <label id="number-label" for="age">* Age: </label>
+        </div>
+        
+        <div class="rightTab">
+          <input type="number" name="age" id="number" min="1"
+                 max="125" class="input-field" placeholder="Age" >
+        </div>
+      </div>
+      
+      <div class="rowTab">
+        <div class="labels">
+          <label for="currentPos">What option best describes your current role?</label>
+        </div>
+        <div class="rightTab">
+      <select id="currentPos" name="currentPos" class="dropdown">
+        <option selected disabled>Select an option</option>
+            <option value="institutional">Institutional Investor</option>
+            <option value="consumer">Consumer Investor</option>
+            <option value="affiliate">Affiliate Partner</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+      </select>
+  
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="userRating">* How likely is it that you would recommend our ICO to a friend or colleague? </label>
+        </div>
+        
+        <div class="rightTab">
+          <ul style="list-style: none;">
+            <li class="radio"><label>Definitely<input name="rating" value="1" type="radio" class="userRatings"></label></li>
+            <li class="radio"><label>Maybe<input name="rating" type="radio" value="2" type="radio" class="userRatings"></label></li>
+            <li class="radio"><label>Not sure<input name="rating" type="radio" value="3" type="radio" class="userRatings"></label></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="rowTab">
+         <div class="labels">
+           <label for="most-like">What do you like most about our ICO: </label>
+        </div>
+        
+        <div class="rightTab">
+          <select id="most-lke" name="mostLike" class="dropdown">
+            <option selected disabled>Select an option</option>
+            <option value="growth">Growth Potential</option>
+            <option value="technology">Technology</option>
+            <option value="team">Team Experience</option>
+            <option value="openSource">Open Source</option>
+          </select>
+        </div>
+      </div>
+      
+      
+      <div class="rowTab">
+        <div class="labels">
+          <label for="preferences">Things that should be improved more in the future<br>(Check all that implies): </label>
+        </div>
+        
+        <div class="rightTab">
+          <ul id="preferences" style="list-style: none;">
+            <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Front-end Design</label></li>
+            <li class="checkbox"><label><input name="prefer" value="2" type="checkbox" class="userRatings">Back-end Development</label></li>
+            <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Community Outreach</label></li>
+            <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Open Source</label></li>
+            <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">3rd Party Integration</label></li>
+            <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">API Services</label></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="rowTab">
+        <div class="labels">
+          <label for="comments">Any other comments or suggestions</label>
+        </div>
+        
+        <div class="rightTab">
+          <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+      </div>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+
+</div>
+</html>
